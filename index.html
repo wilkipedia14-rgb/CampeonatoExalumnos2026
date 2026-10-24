@@ -129,15 +129,15 @@ body{font-family:'Roboto',sans-serif;background:var(--light-gray);color:var(--te
 .stats-detail-row td{background:#fbfbfb;border-top:2px solid var(--border);padding:0;}
 .stats-detail-container{padding:12px 14px;}
 div.stats-detail-row{background:#fbfbfb;border-top:2px solid var(--border);}
-.odds-strip{margin:8px 10px 10px;border:1px solid #1f2a44;border-radius:6px;background:linear-gradient(135deg,#0f1626,#1b2640);color:#fff;padding:8px 10px;}
-.odds-title{font-family:'Oswald',sans-serif;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#ffd24d;margin-bottom:6px;}
+.odds-strip{margin:2px 28px 10px;border:1px solid #1f2a44;border-radius:5px;background:linear-gradient(135deg,#0f1626,#1b2640);color:#fff;padding:4px 7px 5px;}
+.odds-title{font-family:'Oswald',sans-serif;font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#ffd24d;margin-bottom:3px;text-align:center;}
 .odds-title span{font-family:'Roboto Condensed',sans-serif;font-weight:400;letter-spacing:0;text-transform:none;color:#9fb0d0;font-size:10px;}
-.odds-row{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-bottom:5px;}
+.odds-row{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin-bottom:3px;}
 .odds-row.two{grid-template-columns:repeat(2,1fr);margin-bottom:0;}
-.odds-cell{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:4px;padding:5px 4px;text-align:center;}
+.odds-cell{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:3px;padding:2px 3px;text-align:center;}
 .odds-cell.fav{border-color:#ffd24d;background:rgba(255,210,77,.12);}
-.odds-l{display:block;font-family:'Roboto Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:#9fb0d0;}
-.odds-v{display:block;font-family:'Oswald',sans-serif;font-size:17px;font-weight:700;color:#fff;line-height:1.2;}
+.odds-l{display:block;font-family:'Roboto Condensed',sans-serif;font-size:8px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;color:#9fb0d0;}
+.odds-v{display:block;font-family:'Oswald',sans-serif;font-size:13px;font-weight:700;color:#fff;line-height:1.15;}
 .fase-stats-row{text-align:center;padding:4px 8px;border-top:1px dashed #ddd;}
 .row-excluido td{background:#fdecee !important;color:#c0182b !important;}
 .row-excluido .nm{text-decoration:underline;text-decoration-color:#e8001c;text-decoration-thickness:2px;text-underline-offset:3px;font-weight:700;}
@@ -320,7 +320,7 @@ input[type="text"]:focus,input[type="date"]:focus,input[type="time"]:focus{borde
 .playoff-match{background:#f8f8f8;border:1px solid #e0e0e0;border-radius:4px;overflow:hidden;}
 .playoff-match-header{padding:5px 12px;font-family:'Oswald',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#fff;display:flex;align-items:center;justify-content:space-between;}
 .playoff-match-body{padding:10px 12px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:6px;}
-.playoff-team{font-family:'Roboto Condensed',sans-serif;font-size:13px;font-weight:700;text-transform:uppercase;color:var(--text-main);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.playoff-team{font-family:'Roboto Condensed',sans-serif;font-size:18px;font-weight:700;text-transform:uppercase;color:var(--text-main);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .playoff-team.home{text-align:right;}
 .playoff-team.away{text-align:left;}
 .playoff-score-wrap{display:flex;align-items:center;justify-content:center;gap:4px;}
@@ -382,7 +382,7 @@ input[type="text"]:focus,input[type="date"]:focus,input[type="time"]:focus{borde
 .elim-match{background:#f8f8f8;border:1px solid #e0e0e0;border-radius:4px;overflow:hidden;}
 .elim-match-header{padding:6px 12px;font-family:'Oswald',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#fff;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:4px;}
 .elim-match-body{padding:10px 12px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:6px;}
-.elim-team{font-family:'Roboto Condensed',sans-serif;font-size:13px;font-weight:700;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.elim-team{font-family:'Roboto Condensed',sans-serif;font-size:18px;font-weight:700;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .elim-team.home{text-align:right;}.elim-team.away{text-align:left;}
 .elim-score-wrap{display:flex;align-items:center;justify-content:center;gap:4px;}
 .elim-score-input{width:36px;height:34px;text-align:center;font-family:'Oswald',sans-serif;font-size:17px;font-weight:700;border:2px solid var(--border);border-radius:3px;background:#fff;color:var(--black);outline:none;transition:border-color .15s;}
@@ -1038,7 +1038,7 @@ function oddsHtml(catId,m){
   const min=Math.min(o.home,o.draw,o.away);
   const cell=(l,v,fav,t)=>`<div class="odds-cell${fav?' fav':''}" ${t?`title="${escHtml(t)}"`:''}><span class="odds-l">${l}</span><span class="odds-v">${v.toFixed(2)}</span></div>`;
   return `<div class="odds-strip">
-    <div class="odds-title">🎲 Cuotas estimadas <span>· solo por diversión · resultado en los minutos de juego</span></div>
+    <div class="odds-title">🎲 Cuotas estimadas</div>
     <div class="odds-row">${cell('Local',o.home,o.home===min,m.home)}${cell('Empate',o.draw,o.draw===min)}${cell('Visita',o.away,o.away===min,m.away)}</div>
     <div class="odds-row two">${cell('+2.5 goles',o.over)}${cell('Ambos anotan',o.btts)}</div>
   </div>`;
@@ -3162,7 +3162,6 @@ function renderFinalSection(container, cat, s){
       +'<div class="playoff-bracket">'
       +'<div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap;">'
       +'<div style="font-family:Oswald,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;color:'+color+';border-left:4px solid '+color+';padding-left:8px;">⚽ Cuartos de Final</div>'
-      +'<span style="font-family:Roboto Condensed,sans-serif;font-size:11px;color:#999;">Cruces elegidos por el administrador</span>'
       
       +'</div>'
       +'<div class="playoff-matches">'+qfHtml+'</div>'
