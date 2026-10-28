@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guía de la Fase Final · Campeonato Franciscanos 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--red:#e8001c;--dark:#0d0d10;--ink:#1c1c22;--mut:#6b6b76;--line:#e4e4ea;--bg:#f3f3f6;--card:#fff;
+--menores:#e8001c;--medianos:#0066cc;--mayores:#198754;--supermaster:#9b59b6;--gold:#e0a800}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Roboto',Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;font-size:16px}
+h1,h2,h3,.os{font-family:'Oswald','Arial Narrow',sans-serif;text-transform:uppercase;letter-spacing:.03em}
+.top{background:var(--red);color:#fff;font:600 11px 'Oswald';letter-spacing:.18em;text-transform:uppercase;text-align:center;padding:6px 12px}
+header{background:radial-gradient(1200px 400px at 80% -20%,#3a0008 0,transparent 60%),var(--dark);color:#fff;padding:44px 20px 36px;text-align:center;position:relative}
+header img{width:92px;height:92px;object-fit:contain;margin-bottom:12px}
+header h1{font-size:clamp(28px,6vw,52px);line-height:1.05;font-weight:700}
+header h1 em{font-style:normal;color:var(--red)}
+header p{color:#b9b9c4;margin-top:10px;font:500 13px 'Roboto Condensed';letter-spacing:.22em;text-transform:uppercase}
+nav{position:sticky;top:0;z-index:20;background:#17171c;display:flex;gap:2px;overflow-x:auto;padding:0 10px;border-bottom:3px solid var(--red)}
+nav a{color:#cfcfd8;text-decoration:none;font:600 12px 'Oswald';letter-spacing:.1em;text-transform:uppercase;padding:13px 14px;white-space:nowrap}
+nav a:hover{color:#fff;background:#25252c}
+main{max-width:1020px;margin:auto;padding:26px 16px 50px}
+section{margin-bottom:34px;scroll-margin-top:60px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.sh .n{flex:none;width:38px;height:38px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font:700 18px 'Oswald'}
+.sh h2{font-size:clamp(22px,4vw,30px);line-height:1.1}
+.lead{font-size:17px;color:#33333c;margin-bottom:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media(max-width:760px){.grid2{grid-template-columns:1fr}.grid4{grid-template-columns:1fr 1fr}}
+.pill{display:inline-block;font:700 11px 'Oswald';letter-spacing:.1em;text-transform:uppercase;color:#fff;padding:3px 10px;border-radius:99px}
+.medianos{--c:var(--medianos)}.mayores{--c:var(--mayores)}.menores{--c:var(--menores)}.supermaster{--c:var(--supermaster)}
+.pill.c{background:var(--c)}
+/* ruta */
+.route{display:flex;flex-wrap:wrap;gap:10px;align-items:stretch}
+.step{flex:1 1 150px;background:var(--card);border:1px solid var(--line);border-top:4px solid var(--red);border-radius:8px;padding:12px 14px;position:relative}
+.step b{display:block;font:700 15px 'Oswald';text-transform:uppercase;letter-spacing:.05em}
+.step small{display:block;color:var(--mut);font-size:13px;margin-top:3px;line-height:1.35}
+.step .q{font:700 26px 'Oswald';color:var(--red);line-height:1}
+.step.gold{border-top-color:var(--gold)}
+/* salidas */
+.out{border-left:6px solid var(--c);}
+.out h3{font-size:20px;margin:6px 0 2px}
+.team{display:inline-block;font:700 22px 'Oswald';background:#f7f7fa;border:2px dashed #c9c9d2;border-radius:6px;padding:2px 12px;margin:6px 0;text-decoration:underline;text-decoration-color:var(--red);text-decoration-thickness:3px;text-underline-offset:5px}
+.note{background:#fff8e0;border:1px solid #efd77a;border-radius:8px;padding:12px 16px;font-size:15px;margin-top:14px}
+.note.red{background:#fdecee;border-color:#f3b3bb}
+/* tablas antes-despues */
+.ba{display:grid;grid-template-columns:1fr 46px 1fr;gap:0;align-items:start}
+@media(max-width:560px){.ba{grid-template-columns:1fr}.ba .arrow{transform:rotate(90deg);margin:6px auto}}
+.arrow{align-self:center;text-align:center;font:700 28px 'Oswald';color:var(--red)}
+.tbl{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff}
+.tbl h4{background:var(--dark);color:#fff;font:600 12px 'Oswald';letter-spacing:.12em;text-transform:uppercase;padding:8px 12px}
+.row{display:grid;grid-template-columns:34px 1fr;padding:5px 12px;border-top:1px solid #f0f0f4;font-size:14px;align-items:center}
+.row>span:first-child{font:700 14px 'Oswald';color:var(--mut)}
+.row.x{background:#fdecee;color:#9b0014}
+.row.x b{text-decoration:underline;text-decoration-color:var(--red);text-decoration-thickness:2px}
+.row.x>span:first-child{color:#9b0014}
+.row.up{background:#e8f5ee}
+.row.up>span:first-child{color:#146c43}
+.tag{font:700 10px 'Oswald';letter-spacing:.08em;text-transform:uppercase;margin-left:6px;padding:1px 6px;border-radius:3px;background:#198754;color:#fff}
+.tag.r{background:var(--red)}
+/* cruces */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.tab{font:600 13px 'Oswald';letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--dark);background:#fff;color:var(--dark);padding:8px 14px;border-radius:99px;cursor:pointer}
+.tab.on{background:var(--dark);color:#fff}
+.cruces{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px}
+.cruces[hidden]{display:none}
+.cruce{background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.cruce .h{background:#1f1f26;color:#fff;font:600 11px 'Oswald';letter-spacing:.12em;text-transform:uppercase;padding:5px 10px}
+.cruce .b{display:flex;align-items:center;justify-content:center;gap:10px;padding:14px 8px;font:700 22px 'Oswald'}
+.cruce .b i{font-style:normal;color:#b5b5c0;font-size:13px}
+.cruce.bye{border:2px solid var(--gold);background:#fffbea}
+.cruce.bye .h{background:var(--gold);color:#1c1c22}
+.cruce.bye .b{flex-direction:column;gap:2px;font-size:20px}
+.cruce.bye small{font:400 12px 'Roboto';color:#6b5a10;text-transform:none;letter-spacing:0}
+.cruce.mp{border:2px dashed #7a7a86}
+.cruce.mp .h{background:#7a7a86}
+.cruce .b.small{font-size:15px;text-align:center;padding:14px 10px;flex-direction:column;gap:2px}
+.legend{font-size:14px;color:var(--mut);margin-top:12px}
+/* criterios */
+.crit{counter-reset:c;display:grid;gap:10px}
+.crit li{list-style:none;counter-increment:c;display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px 16px}
+.crit li::before{content:counter(c);flex:none;width:34px;height:34px;border-radius:50%;background:var(--dark);color:#fff;font:700 17px 'Oswald';display:grid;place-items:center}
+.crit b{display:block;font:600 16px 'Oswald';text-transform:uppercase;letter-spacing:.04em}
+.crit span{font-size:14.5px;color:#4b4b55}
+.ex{background:#f7f7fa;border:1px solid var(--line);border-radius:8px;padding:12px 14px;font-size:14.5px;margin-top:12px}
+.ex table{width:100%;border-collapse:collapse;margin-top:8px;font-size:14px}
+.ex th,.ex td{padding:6px 8px;border-bottom:1px solid #e6e6ec;text-align:center}
+.ex th{font:600 11px 'Oswald';letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
+.ex td:first-child,.ex th:first-child{text-align:left}
+.ex tr.win td{background:#e8f5ee;font-weight:700}
+/* sorteo */
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:6px 0}
+.flow .box{background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 14px;font:600 14px 'Oswald';text-transform:uppercase;letter-spacing:.05em;text-align:center}
+.flow .box small{display:block;font:400 12px 'Roboto';text-transform:none;letter-spacing:0;color:var(--mut)}
+.flow .ar{font:700 22px 'Oswald';color:var(--red)}
+.flow .box.dice{border:2px solid var(--red)}
+details{background:#fff;border:1px solid var(--line);border-radius:8px;margin-bottom:8px}
+summary{cursor:pointer;padding:13px 16px;font:600 15px 'Oswald';text-transform:uppercase;letter-spacing:.05em;list-style:none;display:flex;justify-content:space-between;gap:10px}
+summary::after{content:'+';font-size:20px;color:var(--red);line-height:1}
+details[open] summary::after{content:'–'}
+details p{padding:0 16px 14px;color:#3c3c45;font-size:15px}
+footer{background:var(--dark);color:#aaa;text-align:center;padding:26px 16px;font:500 12px 'Roboto Condensed';letter-spacing:.15em;text-transform:uppercase}
+footer b{color:#fff;display:block;font:600 14px 'Oswald';letter-spacing:.1em;margin-bottom:4px}
+.btn{position:fixed;right:14px;bottom:14px;z-index:30;background:var(--red);color:#fff;border:none;border-radius:99px;padding:11px 18px;font:700 13px 'Oswald';letter-spacing:.1em;text-transform:uppercase;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+@media print{.btn,nav,.top{display:none}body{background:#fff}header{-webkit-print-color-adjust:exact;print-color-adjust:exact}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}section{page-break-inside:avoid}details{display:block}details>p{display:block}.tabs{display:none}.cruces[hidden]{display:grid!important}}
+@page{size:A4;margin:12mm}
+</style>
+</head>
+<body>
+<div class="top">⚽ Campeonato de Exalumnos Franciscanos · 2026</div>
+<header>
+  <img src="data:image/png;base64,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" alt="Logo">
+  <h1>Así se juega la <em>Fase Final</em></h1>
+  <p>Octavos · Cuartos · Semifinales · Final</p>
+</header>
+<nav>
+  <a href="#ruta">El camino</a><a href="#salidas">Equipos retirados</a><a href="#tabla">La tabla</a><a href="#octavos">Octavos</a><a href="#descanso">¿Quién descansa?</a><a href="#mejor">8vo clasificado</a><a href="#sorteo">Sorteo</a><a href="#faq">Preguntas</a>
+</nav>
+
+<main>
+
+<section id="ruta">
+  <div class="sh"><div class="n">1</div><h2>El camino a la final</h2></div>
+  <p class="lead">En cada categoría, <b>8 equipos</b> llegan a los cuartos de final. Este es el recorrido completo:</p>
+  <div class="route">
+    <div class="step"><span class="q">8vos</span><b>Octavos de final</b><small>Se arman según la tabla de las 13 fechas.</small></div>
+    <div class="step gold"><span class="q">+1</span><b>Mejor perdedor</b><small>Completa el 8vo cupo entre los que perdieron en octavos.</small></div>
+    <div class="step"><span class="q">4tos</span><b>Cuartos de final</b><small>Los cruces se definen por sorteo.</small></div>
+    <div class="step"><span class="q">Semi</span><b>Semifinales</b><small>Los cruces también por sorteo.</small></div>
+    <div class="step"><span class="q">🏆</span><b>Gran final</b><small>Se enfrentan los ganadores de las semifinales.</small></div>
+  </div>
+  <div class="note">📅 La fase final se juega en <b>3 jornadas</b>: la primera con los octavos, la segunda con los cuartos, y la tercera con las semifinales y la final.</div>
+</section>
+
+<section id="salidas">
+  <div class="sh"><div class="n">2</div><h2>Equipos que salieron del campeonato</h2></div>
+  <p class="lead">Dos equipos fueron retirados del campeonato por mala conducta, uno en cada una de estas categorías:</p>
+  <div class="grid2">
+    <div class="card out medianos"><span class="pill c">Medianos</span><h3>Equipo retirado</h3><div class="team">2010-A</div><p>Ocupaba el <b>1.º lugar</b> de la tabla.</p></div>
+    <div class="card out mayores"><span class="pill c">Mayores</span><h3>Equipo retirado</h3><div class="team">1997-B</div><p>Ocupaba el <b>último lugar</b> de la tabla.</p></div>
+  </div>
+  <div class="note red"><b>¿Qué se mantiene?</b> Las 13 fechas jugadas <b>no se modifican</b>: los resultados, goles y puntos de todos los partidos quedan tal cual. En la tabla, el equipo retirado aparece <u style="text-decoration-color:#e8001c;text-decoration-thickness:2px">subrayado en rojo</u> y ya no cuenta para la fase final. Categorías Menores y Super Master no tienen cambios.</div>
+</section>
+
+<section id="tabla">
+  <div class="sh"><div class="n">3</div><h2>Cómo cambió la tabla por su salida</h2></div>
+  <p class="lead">Para la fase final se cuentan solo los equipos que continúan. Los que estaban <b>debajo</b> del equipo retirado suben un puesto, y los demás se quedan donde estaban.</p>
+
+  <div class="card medianos" style="margin-bottom:14px;border-top:4px solid var(--c)">
+    <span class="pill c">Medianos</span> <b style="margin-left:6px">El retirado estaba 1.º → todos suben un puesto</b>
+    <div class="ba" style="margin-top:12px">
+      <div class="tbl"><h4>Tabla original · 14 equipos</h4>
+        <div class="row x"><span>1.º</span><b>2010-A</b></div>
+        <div class="row"><span>2.º</span>Segundo lugar</div>
+        <div class="row"><span>3.º</span>Tercer lugar</div>
+        <div class="row"><span>…</span>…</div>
+        <div class="row"><span>14.º</span>Último lugar</div>
+      </div>
+      <div class="arrow">➜</div>
+      <div class="tbl"><h4>Tabla para la fase final · 13 equipos</h4>
+        <div class="row up"><span>1.º</span><span>Antes 2.º <span class="tag">sube</span></span></div>
+        <div class="row up"><span>2.º</span><span>Antes 3.º <span class="tag">sube</span></span></div>
+        <div class="row up"><span>3.º</span><span>Antes 4.º <span class="tag">sube</span></span></div>
+        <div class="row"><span>…</span>…</div>
+        <div class="row up"><span>13.º</span><span>Antes 14.º <span class="tag">sube</span></span></div>
+      </div>
+    </div>
+    <p style="margin-top:12px;font-size:15px">El que era <b>2.º</b> pasa a ser <b>1.º</b>, y así hacia abajo. Como toda la tabla se corre, <b>todos los cruces de octavos de Medianos cambian</b>.</p>
+  </div>
+
+  <div class="card mayores" style="border-top:4px solid var(--c)">
+    <span class="pill c">Mayores</span> <b style="margin-left:6px">El retirado estaba último → las posiciones de arriba no cambian</b>
+    <div class="ba" style="margin-top:12px">
+      <div class="tbl"><h4>Tabla original · 14 equipos</h4>
+        <div class="row"><span>1.º</span>Primer lugar</div>
+        <div class="row"><span>2.º</span>Segundo lugar</div>
+        <div class="row"><span>…</span>…</div>
+        <div class="row"><span>13.º</span>Puesto 13</div>
+        <div class="row x"><span>14.º</span><b>1997-B</b></div>
+      </div>
+      <div class="arrow">➜</div>
+      <div class="tbl"><h4>Tabla para la fase final · 13 equipos</h4>
+        <div class="row"><span>1.º</span><span>Primer lugar <span class="tag" style="background:#e0a800;color:#1c1c22">pase directo</span></span></div>
+        <div class="row"><span>2.º</span>Segundo lugar</div>
+        <div class="row"><span>…</span>…</div>
+        <div class="row"><span>13.º</span>Puesto 13</div>
+      </div>
+    </div>
+    <p style="margin-top:12px;font-size:15px">Nadie cambia de puesto. Lo único que cambia es que, al quedar <b>13 equipos</b>, el 1.º pasa a descansar en octavos (ver sección 5).</p>
+  </div>
+</section>
+
+<section id="octavos">
+  <div class="sh"><div class="n">4</div><h2>Los cruces de octavos</h2></div>
+  <p class="lead">El mejor ubicado se enfrenta al peor ubicado, el segundo mejor al segundo peor, y así sucesivamente.</p>
+  <div class="tabs" id="tabs">
+    <button class="tab on" data-t="13">13 equipos · Medianos, Mayores y Super Master</button>
+    <button class="tab" data-t="14">14 equipos · Menores</button>
+  </div>
+  <div class="cruces" id="c13">
+    <div class="cruce bye"><div class="h">1.º · Pase directo</div><div class="b">1.º<small>Descansa y entra directo a cuartos</small></div></div>
+    <div class="cruce"><div class="h">Partido 2</div><div class="b">2.º <i>vs</i> 13.º</div></div>
+    <div class="cruce"><div class="h">Partido 3</div><div class="b">3.º <i>vs</i> 12.º</div></div>
+    <div class="cruce"><div class="h">Partido 4</div><div class="b">4.º <i>vs</i> 11.º</div></div>
+    <div class="cruce"><div class="h">Partido 5</div><div class="b">5.º <i>vs</i> 10.º</div></div>
+    <div class="cruce"><div class="h">Partido 6</div><div class="b">6.º <i>vs</i> 9.º</div></div>
+    <div class="cruce"><div class="h">Partido 7</div><div class="b">7.º <i>vs</i> 8.º</div></div>
+    <div class="cruce mp"><div class="h">Cupo 8</div><div class="b small">Mejor perdedor<small style="font:400 12px Roboto;color:#6b6b76">de los 6 partidos</small></div></div>
+  </div>
+  <div class="cruces" id="c14" hidden>
+    <div class="cruce"><div class="h">Partido 1</div><div class="b">1.º <i>vs</i> 14.º</div></div>
+    <div class="cruce"><div class="h">Partido 2</div><div class="b">2.º <i>vs</i> 13.º</div></div>
+    <div class="cruce"><div class="h">Partido 3</div><div class="b">3.º <i>vs</i> 12.º</div></div>
+    <div class="cruce"><div class="h">Partido 4</div><div class="b">4.º <i>vs</i> 11.º</div></div>
+    <div class="cruce"><div class="h">Partido 5</div><div class="b">5.º <i>vs</i> 10.º</div></div>
+    <div class="cruce"><div class="h">Partido 6</div><div class="b">6.º <i>vs</i> 9.º</div></div>
+    <div class="cruce"><div class="h">Partido 7</div><div class="b">7.º <i>vs</i> 8.º</div></div>
+    <div class="cruce mp"><div class="h">Cupo 8</div><div class="b small">Mejor perdedor<small style="font:400 12px Roboto;color:#6b6b76">de los 7 partidos</small></div></div>
+  </div>
+  <p class="legend" id="leg">Las posiciones son las de la tabla de las 13 fechas, ya con los equipos retirados fuera. Los 6 ganadores + el 1.º + el mejor perdedor completan los 8 equipos de cuartos.</p>
+</section>
+
+<section id="descanso">
+  <div class="sh"><div class="n">5</div><h2>¿Por qué descansa el 1.º con 13 equipos?</h2></div>
+  <div class="grid2">
+    <div class="card">
+      <h3 style="font-size:18px;margin-bottom:6px">Es un tema de números</h3>
+      <p>Con <b>13 equipos</b> no se pueden armar parejas completas: siempre sobra uno. Alguien tiene que quedarse sin jugar octavos para que los demás sí puedan cruzarse.</p>
+    </div>
+    <div class="card" style="border-top:4px solid var(--gold)">
+      <h3 style="font-size:18px;margin-bottom:6px">Y es un premio por la tabla</h3>
+      <p>Ese equipo es el <b>1.º de la tabla</b>: el que mejor jugó las 13 fechas. Descansar y entrar directo a cuartos es la recompensa por su campaña. Es la misma regla que ya se aplica en Super Master.</p>
+    </div>
+  </div>
+  <div class="note">🧮 <b>La cuenta:</b> el 1.º entra directo + 6 ganadores de octavos + 1 mejor perdedor = <b>8 equipos</b> en cuartos.</div>
+</section>
+
+<section id="mejor">
+  <div class="sh"><div class="n">6</div><h2>Cómo se elige al 8.º equipo de cuartos</h2></div>
+  <p class="lead">Después de los octavos, <b>todos los equipos que perdieron</b> compiten por el último cupo. Gana el cupo el que “mejor perdió”, con estos criterios en orden:</p>
+  <ol class="crit">
+    <li><div><b>Menor diferencia de goles en su derrota</b><span>Perder 0-1 es mejor que perder 0-3.</span></div></li>
+    <li><div><b>Más goles anotados en su partido</b><span>Si hay empate en lo anterior, se prefiere al que más goles hizo (por ejemplo, 2-3 es mejor que 0-1).</span></div></li>
+    <li><div><b>Mejor posición en la tabla de las 13 fechas</b><span>Si siguen empatados, se prefiere al que estaba mejor ubicado en la tabla.</span></div></li>
+  </ol>
+  <div class="ex"><b>Ejemplo (con datos ilustrativos):</b>
+    <table>
+      <tr><th>Equipo que perdió</th><th>Resultado</th><th>Dif.</th><th>Goles</th><th>Pos. tabla</th></tr>
+      <tr class="win"><td>Equipo A ★</td><td>1-2</td><td>-1</td><td>1</td><td>9.º</td></tr>
+      <tr><td>Equipo B</td><td>0-1</td><td>-1</td><td>0</td><td>7.º</td></tr>
+      <tr><td>Equipo C</td><td>0-3</td><td>-3</td><td>0</td><td>8.º</td></tr>
+    </table>
+    <p style="margin-top:8px">A y B perdieron por 1 gol de diferencia (empatan en el criterio 1). A marcó un gol y B ninguno, así que <b>A</b> clasifica por el criterio 2.</p>
+  </div>
+  <div class="note">ℹ️ Los goles de una <b>tanda de penales</b> no cuentan para estos criterios; sí cuentan los penales cobrados durante el tiempo de juego.</div>
+</section>
+
+<section id="sorteo">
+  <div class="sh"><div class="n">7</div><h2>Cuartos y semifinales: por sorteo</h2></div>
+  <p class="lead">A diferencia de los octavos (que dependen de la tabla), los cruces de las siguientes rondas <b>se definen por sorteo</b>.</p>
+  <div class="flow">
+    <div class="box">8 clasificados<small>1.º + 6 ganadores + mejor perdedor</small></div><span class="ar">➜</span>
+    <div class="box dice">🎲 Sorteo<small>define los 4 cuartos</small></div><span class="ar">➜</span>
+    <div class="box">4 ganadores</div><span class="ar">➜</span>
+    <div class="box dice">🎲 Sorteo<small>define las 2 semifinales</small></div><span class="ar">➜</span>
+    <div class="box">2 finalistas</div><span class="ar">➜</span>
+    <div class="box" style="border:2px solid var(--gold)">🏆 Gran final<small>ganadores de las semifinales</small></div>
+  </div>
+  <div class="note">La <b>final</b> no se sortea: se arma sola con los dos ganadores de las semifinales.</div>
+</section>
+
+<section id="faq">
+  <div class="sh"><div class="n">8</div><h2>Preguntas frecuentes</h2></div>
+  <details><summary>¿Se borró algún resultado de las 13 fechas?</summary><p>No. Todos los resultados, goles, puntos y tarjetas de las 13 fechas siguen igual. Solo se retiró de la clasificación a los equipos mencionados, que aparecen subrayados en rojo.</p></details>
+  <details><summary>¿Las estadísticas de goleadores y tarjetas siguen sumando?</summary><p>Sí. Los goles y tarjetas de la fase final se suman a los de las 13 fechas para el total de cada jugador.</p></details>
+  <details><summary>¿Cuentan los goles de la tanda de penales?</summary><p>No. Los penales cobrados <b>durante el partido</b> sí cuentan como goles; los de la tanda de desempate no.</p></details>
+  <details><summary>¿Qué pasa con las tarjetas rojas?</summary><p>Todos los equipos llegan a octavos sin suspensiones. Las tarjetas rojas que se muestren desde los octavos en adelante sí generan suspensión para el siguiente partido de ese jugador.</p></details>
+  <details><summary>¿Quién registra el sorteo y los resultados?</summary><p>La organización carga los cruces sorteados y los resultados en el dashboard del campeonato, donde todos pueden ver cómo avanza la fase final.</p></details>
+</section>
+
+</main>
+<footer><b>San Pancho · Año del gran “Jubileo Franciscano”</b>Campeonato de Exalumnos Franciscanos 2026</footer>
+<button class="btn" onclick="window.print()">📄 Guardar PDF</button>
+<script>
+const tabs=document.querySelectorAll('.tab'),c13=document.getElementById('c13'),c14=document.getElementById('c14'),leg=document.getElementById('leg');
+tabs.forEach(t=>t.onclick=()=>{
+  tabs.forEach(x=>x.classList.toggle('on',x===t));
+  const is13=t.dataset.t==='13';c13.hidden=!is13;c14.hidden=is13;
+  leg.textContent=is13
+    ?'Las posiciones son las de la tabla de las 13 fechas, ya con los equipos retirados fuera. Los 6 ganadores + el 1.º + el mejor perdedor completan los 8 equipos de cuartos.'
+    :'Con 14 equipos juegan todos en octavos. Los 7 ganadores + el mejor perdedor completan los 8 equipos de cuartos.';
+});
+</script>
+</body>
+</html>
